@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registriraj se - Spotify</title>
+    <link rel="shotcut icon" href="slike/spotify.png" type="image/x-icon">
+</head>
+
+<body>
+	<header class="glava">
+        <img src="slike/SpotifyLogo.png" alt="SpotifyLogo" title="SpotifyLogo">
+    </header>
+    <div class="glavni">
+	
+		<div class="naslov">
+            <h1>Registriraj se in <br />začni poslušati</h1>
+        </div>
+		<div class="prviDiv">
+		
+		<form id="emailForm">
+			<div class="epostatext">
+				<div class="enaslov">
+					<label>E-poštni naslov</label>
+				</div>
+				<div class="textfield">
+                    <input type="email" name="email" placeholder="name@gmail.com" id="emailField">
+                </div>
+				<div class="alert">
+                    <span class="alertSpan">
+                        Ta e-poštni naslov je neveljaven. Napisan mora biti v obliki example@gmail.com
+                    </span>
+                </div>
+				<div class="geslo">
+					<label>Geslo</label>
+				</div>
+				<div class="textfield">
+					<input type="password" name="password" placeholder="************" required="" id="passwordField">
+				</div>
+				<div>
+					<button type="submit" value="Prijavi se" id="gumb1">Prijavi se </button>
+				</div>
+			</div>
+		</form>
+		</div>
+		
+		<div class="aliDiv">
+            <div class="ali">
+                <h4>ali</h4>
+            </div>
+        </div>
+		
+		<div class="povezave">
+			<div>
+				<button type="button" class="google"><img src="slike/google.png" width="25" height="24" class="ikonagoogle">
+				<span class="registrirajbarva">Nadaljuj z Googlom</span></button>
+			</div>
+			
+			<div id="facebookdiv">
+				<button type="button" class="facebook"><img src="slike/facebook.png" class="ikonafacebook" width="25" height="24">
+				<span class="naprejbarva"><span class="registrirajbarva">Nadaljuj s Facebookom</span></span></button>
+			</div>
+			
+			<div id="applediv">
+                <button type="button" class="apple"><img src="slike/apple.png" class="ikonaapple" width="20" height="24">
+				<span class="registrirajbarva">Nadaljuj z Applom</span></button>
+			</div>
+		</div>
+		
+		<div class="textZeImasRacun">
+            <p>
+                <a id="prviDel">Nimaš računa? </a><br>
+                <a id="drugiDel" href="registracija.html">Registriraj se</a>
+            </p>
+         </div>
+		<footer class="noga">
+            <span id="nogaID">
+                <p>To spletno mesto je zaščiteno z reCAPTCHA. Veljata Googlov</p>
+                <a id="del1" href="https://policies.google.com/privacy" target="_blank"
+                    >pravilnik o zasebnosti</a>
+                in
+                <a id="del2" href="https://policies.google.com/terms" target="_blank">pogoji storitve</a>.<span id="trigger" style="cursor: pointer;"></span>
+            </span>
+        </footer>
+		<!-- Popup HTML -->
+		<div id="overlay"></div>
+		<div class="popup" id="popup">
+		  <span class="closePopup" id="closePopup">&times;</span>
+		  <p>Vaše sporočilo tukaj!</p>
+		  <button class="gumb_popup" id="popupBtn">OK</button>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

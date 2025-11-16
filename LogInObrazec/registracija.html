@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija - Spotify</title>
+    <link rel="stylesheet" href="CSS/registracija.css">
+    <link rel="shotcut icon" href="slike/spotify.png" type="image/x-icon">
+</head>
+<body>
+
+<header class="glava">
+    <img src="slike/spotifyLogo.png">
+</header>
+
+<div class="glavni">
+    <div class="zacetniDiv">
+        <a href="index.html" class="gumb1">
+            <img src="slike/backArrow.png" width="24" height="24" alt="Nazaj">
+        </a>
+        <div class="prviText">
+            <div class="ustvariG">Registracija</div>
+        </div>
+    </div>
+
+    <form id="noviceForm">
+        <div class="drugiDiv">
+            <!-- IME -->
+            <div class="imetext"><span>Ime</span></div>
+            <input type="text" id="ime" placeholder="Vnesi ime">
+            <div class="AlertIme">Vnesi svoje ime.</div>
+
+            <!-- PRIIMEK -->
+            <div class="imetext"><span>Priimek</span></div>
+            <input type="text" id="priimek" placeholder="Vnesi priimek">
+            <div class="AlertPriimek">Vnesi svoj priimek.</div>
+
+            <!-- UPORABNIŠKO IME -->
+            <div class="imetext"><span>Uporabniško ime</span></div>
+            <input type="text" id="uporabnisko" placeholder="Vnesi uporabniško ime">
+            <div class="AlertUser">Vnesi uporabniško ime.</div>
+
+            <!-- EMAIL -->
+            <div class="imetext"><span>E-pošta</span></div>
+            <input type="email" id="email" placeholder="Vnesi email">
+            <div class="AlertEmail">Vnesi veljaven email.</div>
+
+            <!-- GESLO -->
+            <div class="imetext"><span>Geslo</span></div>
+            <input type="password" id="geslo" placeholder="Vnesi geslo">
+            <div class="AlertGeslo">Vnesi geslo.</div>
+
+            <!-- POTRDI GESLO -->
+            <div class="imetext"><span>Potrdi geslo</span></div>
+            <input type="password" id="geslo2" placeholder="Ponovi geslo">
+            <div class="AlertGeslo2">Gesli se ne ujemata.</div>
+
+            <!-- DATUM ROJSTVA -->
+            <div class="DatumRojstva"><span>Datum rojstva</span></div>
+            <div class="datum">
+                <input type="text" id="dan" placeholder="dd" maxlength="2">
+                <select id="mesec">
+                    <option value="" disabled selected hidden>Mesec</option>
+                    <option value="januar">Januar</option>
+                    <option value="februar">Februar</option>
+                    <option value="marec">Marec</option>
+                    <option value="april">April</option>
+                    <option value="maj">Maj</option>
+                    <option value="junij">Junij</option>
+                    <option value="julij">Julij</option>
+                    <option value="avgust">Avgust</option>
+                    <option value="september">September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+                <input type="text" id="leto" placeholder="yyyy" maxlength="4">
+            </div>
+            <div class="alert">Vnesi datum rojstva.</div>
+
+            <!-- SPOL -->
+            <div class="SpolDiv">
+                <div class="spol"><span>Spol</span></div>
+                <div class="textPodSpol"><span>Izberi svoj spol.</span></div>
+                <div id="glavniradiodiv">
+                    <label class="radio-container">Moški <input type="radio" name="gender" value="male"></label>
+                    <label class="radio-container">Ženska <input type="radio" name="gender" value="female"></label>
+                </div>
+                <div class="RadioAlert">Izberi spol.</div>
+            </div>
+
+            <!-- SUBMIT -->
+            <div class="gumbNaprej">
+                <button type="submit" class="gumb" id="nextButton">
+                    <h3 class="naprejbarva">Registriraj se</h3>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/registracija.js"></script>
+</body>
+</html>
